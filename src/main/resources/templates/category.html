@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="~{base :: head}"></head>
+<body>
+    <div class="container-fluid">
+        <div class="card text-bg-danger mb-3" style="width: 18rem;">
+            <div class="card-header">Category</div>
+            <div class="card-body"></div>
+                <form action="/category/create" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-warning mb-2">Submit</button>
+                </form>
+                <small th:text="${msg}"></small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
